@@ -1,0 +1,86 @@
+body {
+    color: black;
+    margin: 0px auto 0px auto;
+    width: 600px;
+    font-size: 15px;
+    font-family: 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+
+div#header {
+    margin-bottom: 44px;
+    margin-top: 44px;
+    height: 45px;
+}
+
+div#logo a {
+    float: left;
+    font-size: 29px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #E82A37;
+    text-decoration: none;
+    height: 30px;
+}
+
+div#logo a:hover {
+  text-decoration: underline;
+}
+
+div#header #navigation {
+    text-align: right;
+}
+
+div#header #navigation a {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+div#footer {
+    color: #555;
+    font-size: 12px;
+    margin-top: 30px;
+    padding: 12px 0px 12px 0px;
+    text-align: right;
+}
+
+h1 {
+    font-size: 15px;
+}
+
+h2 {
+    font-size: 15px;
+}
+
+div.info {
+    color: rgb(170, 170, 170);
+    font-size: 14px;
+}
+
+
+a {
+  color: #0881B3;
+  text-decoration: none;
+}
+
+a:hover{
+ text-decoration: underline; 
+}
+
+a:visited {
+  color: #0881B3;
+}
+
+.recent-posts {
+  list-style-type: none;
+}
+
+.recent-posts li span {
+  color: #aaa;
+}
