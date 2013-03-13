@@ -84,3 +84,12 @@ a:visited {
 .recent-posts li span {
   color: #aaa;
 }
+
+.band{
+  height: 5px;
+  width: 100%;
+  background-color: #E82A37;
+  position: absolute;
+  left:0px;
+  top: 0px;
+}
