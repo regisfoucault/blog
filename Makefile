@@ -18,7 +18,7 @@ publish: build
 	git stash save
 	git checkout publish
 	mkdir _source
-	find . -maxdepth 1 ! -name _source ! -name .gitignore ! -name .git -exec mv '{}' _source/ \;
+	find . -maxdepth 1 ! -name _source ! -name . ! -name .git -name .htaccess -exec mv '{}' _source/ \;
 	#cp -r _source/_site/* ./
 	#cp _source/.htaccess ./
 	#rm -fr _source
