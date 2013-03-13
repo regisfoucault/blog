@@ -20,6 +20,7 @@ publish: build
 	mkdir _source
 	find . -maxdepth 1 ! -name _source ! -name . ! -name .git -exec mv '{}' _source/ \;
 	cp -r _source/_site/* ./
+	cp -r _source/.htaccess ./
 	rm -fr _source
 	git add -A . && git commit -m "Publish" || true
 	rm -fr ./*
