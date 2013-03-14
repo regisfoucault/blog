@@ -3,11 +3,14 @@
 import           Control.Applicative ((<$>))
 import           Data.Monoid         (mappend)
 import           Hakyll
+import Data.List (isPrefixOf)
+--import Data.Monoid(mappend)
+import Data.Text (pack,unpack,replace,empty)
 
 
 --------------------------------------------------------------------------------
 main :: IO ()
-main = hakyll $ do
+main = hakyllWith myConfiguration $ do
     match "images/*" $ do
         route   idRoute
         compile copyFileCompiler
@@ -15,6 +18,11 @@ main = hakyll $ do
     match "css/*" $ do
         route   idRoute
         compile compressCssCompiler
+
+    -- Copy favicon, htaccess...
+    match "data/*" $ do
+        route   $ gsubRoute "data/" (const "")
+        compile copyFileCompiler
 
     match "posts/*" $ do
         route $ setExtension "html"
@@ -51,3 +59,13 @@ postList sortFilter = do
     itemTpl <- loadBody "templates/post-item.html"
     list    <- applyTemplateList itemTpl postCtx posts
     return list
+
+
+-- Custom configuration
+
+myConfiguration :: Configuration
+myConfiguration = defaultConfiguration {ignoreFile = ignoreFile'}
+  where
+    ignoreFile' x
+        | x == "data/.htaccess"  = False
+        | otherwise              = ignoreFile defaultConfiguration x
