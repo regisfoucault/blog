@@ -1,5 +1,6 @@
 ---
 title: Heroku vs Clever Cloud JDBC credentials
+twittertext: Heroku vs Clever Cloud JDBC credentials
 ---
 
 A quick help when configuring Postgre SQL databases in scala projects on Heroku and Clever Cloud. Actually the basic jdbc parameters are required but not in the same manner.
