@@ -12,5 +12,7 @@ To fill this gap, I created <a href="https://nextcheckinreminder.cleverapps.io" 
 
 2. **enter the task** you need to be reminded.
 
-
 You're done : next time you checkin in this place, you will receive this reminder by email.
+
+<br/>
+This application was made in scala with <a href="http://www.playframework.com" target="_blank">Play Framework</a> and is hosted on <a href="http://www.clever-cloud.com" target="_blank">Clever Cloud</a> !
