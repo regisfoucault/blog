@@ -77,11 +77,11 @@ a:visited {
   color: #0881B3;
 }
 
-.recent-posts {
+.recent-posts li{
   list-style-type: none;
 }
 
-.recent-posts li span {
+.recent-posts li {
   color: #aaa;
 }
 
