@@ -23,7 +23,7 @@ publish: build
 	rm -fr _source
 	git add -A . && git commit -m "Publish" || true
 	rm -fr ./*
-	git push cc publish:master
+	git push -f cc publish:master
 	git checkout master
 	git checkout -- .
 	git stash pop || true
